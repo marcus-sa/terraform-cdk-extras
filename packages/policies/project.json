@@ -1,0 +1,34 @@
+{
+  "root": "packages/policies",
+  "sourceRoot": "packages/policies/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/policies",
+        "tsConfig": "packages/policies/tsconfig.lib.json",
+        "packageJson": "packages/policies/package.json",
+        "main": "packages/policies/src/index.ts",
+        "assets": ["packages/policies/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/policies/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/policies"],
+      "options": {
+        "jestConfig": "packages/policies/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

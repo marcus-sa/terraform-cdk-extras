@@ -1,0 +1,34 @@
+{
+  "root": "packages/kind-cli",
+  "sourceRoot": "packages/kind-cli/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/kind-cli",
+        "tsConfig": "packages/kind-cli/tsconfig.lib.json",
+        "packageJson": "packages/kind-cli/package.json",
+        "main": "packages/kind-cli/src/index.ts",
+        "assets": ["packages/kind-cli/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["packages/kind-cli/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/kind-cli"],
+      "options": {
+        "jestConfig": "packages/kind-cli/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

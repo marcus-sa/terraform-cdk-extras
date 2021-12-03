@@ -6,15 +6,23 @@
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
+    "strict": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
+    "target": "es2018",
+    "module": "commonjs",
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tfx/core": ["packages/core/src/index.ts"],
+      "@tfx/kind-cli": ["packages/kind-cli/src/index.ts"],
+      "@tfx/plan": ["packages/plan/src/index.ts"],
+      "@tfx/policies": ["packages/policies/src/index.ts"],
+      "@tfx/policy": ["packages/policy/src/index.ts"],
+      "@tfx/testing": ["packages/testing/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

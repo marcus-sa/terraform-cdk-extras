@@ -1,6 +1,6 @@
 {
   "extends": "@nrwl/workspace/presets/npm.json",
-  "npmScope": "terraform-cdk-extras",
+  "npmScope": "tfx",
   "affected": {
     "defaultBase": "main"
   },

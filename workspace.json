@@ -1,4 +1,11 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "core": "packages/core",
+    "kind-cli": "packages/kind-cli",
+    "plan": "packages/plan",
+    "policies": "packages/policies",
+    "policy": "packages/policy",
+    "testing": "packages/testing"
+  }
 }
