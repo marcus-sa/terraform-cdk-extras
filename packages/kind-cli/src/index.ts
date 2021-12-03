@@ -1,1 +1,1 @@
-export * from './lib/kind-cli';
+export * from './kind';

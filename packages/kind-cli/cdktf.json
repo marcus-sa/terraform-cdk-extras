@@ -1,0 +1,11 @@
+{
+  "language": "typescript",
+  "app": "yarn run",
+  "projectId": "85724cfe-d82d-4ae3-862b-fa690f4dfcc0",
+  "terraformVersion": "1.0.11",
+  "terraformProviders": ["hashicorp/local@2.1.0", "kreuzwerker/docker@2.15.0"],
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}

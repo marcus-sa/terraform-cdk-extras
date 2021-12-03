@@ -1,0 +1,25 @@
+{
+  "language": "typescript",
+  "app": "nx run-many --target=build --all",
+  "projectId": "85724cfe-d82d-4ae3-862b-fa690f4dfcc0",
+  "stacks": ["woba-local", "woba-infrastructure"],
+  "terraformProviders": [
+    "spotinst/spotinst@1.61.1",
+    "gitlabhq/gitlab@3.7.0",
+    "hashicorp/tls@2.1",
+    "hashicorp/google-beta@3.90.0",
+    "hashicorp/tfe@0.26.1",
+    "hashicorp/googleworkspace@0.5.1",
+    "hashicorp/local@2.1.0",
+    "hashicorp/helm@2.3.0",
+    "hashicorp/kubernetes@2.6.1",
+    "hashicorp/random@3.1.0",
+    "hashicorp/null@3.1.0",
+    "integrations/github@4.17.0"
+  ],
+  "terraformModules": [],
+  "context": {
+    "excludeStackIdFromLogicalIds": "true",
+    "allowSepCharsInLogicalIds": "true"
+  }
+}
